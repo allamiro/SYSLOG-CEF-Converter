@@ -1,2 +1,4 @@
 # SYSLOG to CEF Converter
 The syslog-to-cef repository is a Python program designed to convert syslog messages to Common Event Format (CEF) for easy integration with a SIEM solution using python.
+
+The program reads syslog messages from an input file and converts each message to CEF format, writing the resulting events to an output file. The program uses regular expressions to parse the syslog messages and extract relevant fields, and then constructs a CEF event using a predefined CEF header template and the extracted fields. The resulting CEF events can be ingested by a SIEM solution for further analysis and correlation with other security events. The program includes support for parsing syslog messages from a variety of sources, including Cisco ASA firewalls, and can be easily customized to support additional syslog sources. The repository includes sample input and output files, as well as detailed documentation and usage instructions.
